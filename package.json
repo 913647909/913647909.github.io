@@ -5,7 +5,11 @@
   "hexo": {
     "version": "6.3.0"
   },
+  "scripts": {
+    "c": "git pull && git cz && git push"
+  },
   "dependencies": {
+    "commitizen": "^4.3.0",
     "hexo": "^6.3.0",
     "hexo-cli": "^4.3.0",
     "hexo-deployer-git": "^4.0.0",
