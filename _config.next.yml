@@ -495,7 +495,7 @@ font:
   # Global font settings used for all elements inside <body>.
   global:
     external: true
-    family: Noto Serif SC
+    family: Noto Serif
     size:
 
   # Font settings for site title (.site-title).
