@@ -1,0 +1,413 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width">
+<meta name="theme-color" content="#222"><meta name="generator" content="Hexo 7.3.0">
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png">
+  <link rel="mask-icon" href="/images/logo.svg" color="#222">
+
+<link rel="stylesheet" href="/css/main.css">
+
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Roboto+Mono:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap&subset=latin,latin-ext">
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha256-dABdfBfUoC8vJUBOwGVdm8L9qlMWaHTIfXt+7GnZCIo=" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.1.1/animate.min.css" integrity="sha256-PR7ttpcvz8qrF57fur/yAx1qXMFJeJFiA6pSzWi0OIE=" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/pace/1.2.4/themes/blue/pace-theme-minimal.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/pace/1.2.4/pace.min.js" integrity="sha256-gqd7YTjg/BtfqWSwsJOvndl0Bxc8gFImLEkXQT8+qj0=" crossorigin="anonymous"></script>
+
+<script class="next-config" data-name="main" type="application/json">{"hostname":"misakatang.cn","root":"/","images":"/images","scheme":"Pisces","darkmode":false,"version":"8.22.0","exturl":false,"sidebar":{"position":"left","width_expanded":320,"width_dual_column":240,"display":"post","padding":18,"offset":12,"onmobile":false},"hljswrap":true,"copycode":{"enable":true,"style":null,"show_result":false},"fold":{"enable":false,"height":500},"bookmark":{"enable":false,"color":"#222","save":"auto"},"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"stickytabs":false,"motion":{"enable":true,"async":false,"duration":200,"transition":{"menu_item":"fadeInDown","post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},"i18n":{"placeholder":"搜索...","empty":"没有找到任何搜索结果：${query}","hits_time":"找到 ${hits} 个搜索结果（用时 ${time} 毫秒）","hits":"找到 ${hits} 个搜索结果"}}</script><script src="/js/config.js"></script>
+
+    <meta name="description" content="Data Abstraction and Object OrientationObject-Oriented Programminghe abstraction provided by modules and module types has at least three important benefits:  It reduces conceptual load by minimizing t">
+<meta property="og:type" content="article">
+<meta property="og:title" content="《Programming Language Pragmatics》第九章笔记">
+<meta property="og:url" content="http://misakatang.cn/2024/07/17/programming-language-pragmatics-09/index.html">
+<meta property="og:site_name" content="MisakaTang&#39;s Blog">
+<meta property="og:description" content="Data Abstraction and Object OrientationObject-Oriented Programminghe abstraction provided by modules and module types has at least three important benefits:  It reduces conceptual load by minimizing t">
+<meta property="og:locale" content="zh_CN">
+<meta property="article:published_time" content="2024-07-17T11:45:14.000Z">
+<meta property="article:modified_time" content="2025-01-04T03:05:07.629Z">
+<meta property="article:author" content="MisakaTang">
+<meta property="article:tag" content="编译器">
+<meta property="article:tag" content="Programming Language Pragmatics">
+<meta name="twitter:card" content="summary">
+
+
+<link rel="canonical" href="http://misakatang.cn/2024/07/17/programming-language-pragmatics-09/">
+
+
+<script class="next-config" data-name="page" type="application/json">{"sidebar":"","isHome":false,"isPost":true,"lang":"zh-CN","comments":true,"permalink":"http://misakatang.cn/2024/07/17/programming-language-pragmatics-09/","path":"2024/07/17/programming-language-pragmatics-09/","title":"《Programming Language Pragmatics》第九章笔记"}</script>
+
+<script class="next-config" data-name="calendar" type="application/json">""</script>
+<title>《Programming Language Pragmatics》第九章笔记 | MisakaTang's Blog</title>
+  
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-4TSLH4NC9H"></script>
+  <script class="next-config" data-name="google_analytics" type="application/json">{"tracking_id":"G-4TSLH4NC9H","only_pageview":false,"measure_protocol_api_secret":null}</script>
+  <script src="/js/third-party/analytics/google-analytics.js"></script>
+
+  <script src="/js/third-party/analytics/baidu-analytics.js"></script>
+  <script async src="https://hm.baidu.com/hm.js?de7c77febeeac252eee468207ae11ce4"></script>
+
+
+
+  <script>
+    (function(c,l,a,r,i,t,y){
+        c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
+        t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
+        y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
+    })(window, document, "clarity", "script", "jtb4czrfeu");
+</script>
+
+
+  <script async defer data-website-id="b9e21e4f-5512-43e5-ab60-01a527a98a8c" src="https://umami-kappa-cyan.vercel.app/script.js" data-host-url="https://umami-kappa-cyan.vercel.app"></script>
+
+
+  <noscript>
+    <link rel="stylesheet" href="/css/noscript.css">
+  </noscript>
+<link rel="alternate" href="/atom.xml" title="MisakaTang's Blog" type="application/atom+xml">
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage" class="use-motion">
+  <div class="headband"></div>
+
+  <main class="main">
+    <div class="column">
+      <header class="header" itemscope itemtype="http://schema.org/WPHeader"><div class="site-brand-container">
+  <div class="site-nav-toggle">
+    <div class="toggle" aria-label="切换导航栏" role="button">
+        <span class="toggle-line"></span>
+        <span class="toggle-line"></span>
+        <span class="toggle-line"></span>
+    </div>
+  </div>
+
+  <div class="site-meta">
+
+    <a href="/" class="brand" rel="start">
+      <i class="logo-line"></i>
+      <p class="site-title">MisakaTang's Blog</p>
+      <i class="logo-line"></i>
+    </a>
+  </div>
+
+  <div class="site-nav-right">
+    <div class="toggle popup-trigger" aria-label="搜索" role="button">
+    </div>
+  </div>
+</div>
+
+
+
+<nav class="site-nav">
+  <ul class="main-menu menu"><li class="menu-item menu-item-home"><a href="/" rel="section"><i class="fa fa-home fa-fw"></i>首页</a></li><li class="menu-item menu-item-categories"><a href="/categories/" rel="section"><i class="fa fa-th fa-fw"></i>分类</a></li><li class="menu-item menu-item-tags"><a href="/tags/" rel="section"><i class="fa fa-tags fa-fw"></i>标签</a></li><li class="menu-item menu-item-about"><a href="/about/" rel="section"><i class="fa fa-user fa-fw"></i>关于</a></li>
+  </ul>
+</nav>
+
+
+
+
+</header>
+        
+  
+  <aside class="sidebar">
+
+    <div class="sidebar-inner sidebar-nav-active sidebar-toc-active">
+      <ul class="sidebar-nav">
+        <li class="sidebar-nav-toc">
+          文章目录
+        </li>
+        <li class="sidebar-nav-overview">
+          站点概览
+        </li>
+      </ul>
+
+      <div class="sidebar-panel-container">
+        <!--noindex-->
+        <div class="post-toc-wrap sidebar-panel">
+            <div class="post-toc animated"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#Data-Abstraction-and-Object-Orientation"><span class="nav-text">Data Abstraction and Object Orientation</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#Object-Oriented-Programming"><span class="nav-text">Object-Oriented Programming</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Encapsulation-and-Inheritance%EF%BC%88%E5%B0%81%E8%A3%85%E4%B8%8E%E7%BB%A7%E6%89%BF%EF%BC%89"><span class="nav-text">Encapsulation and Inheritance（封装与继承）</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#Modules"><span class="nav-text">Modules</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#Classes"><span class="nav-text">Classes</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#Nesting-Inner-Classes"><span class="nav-text">Nesting (Inner Classes)</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Initialization-and-Finalization"><span class="nav-text">Initialization and Finalization</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Dynamic-Method-Binding"><span class="nav-text">Dynamic Method Binding</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Multiple-Inheritance%EF%BC%88%E5%A4%9A%E9%87%8D%E7%BB%A7%E6%89%BF%EF%BC%89"><span class="nav-text">Multiple Inheritance（多重继承）</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Object-Oriented-Programming-Revisited"><span class="nav-text">Object-Oriented Programming Revisited</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Summary-and-Concluding-Remarks"><span class="nav-text">Summary and Concluding Remarks</span></a></li></ol></li></ol></div>
+        </div>
+        <!--/noindex-->
+
+        <div class="site-overview-wrap sidebar-panel">
+          <div class="site-author animated" itemprop="author" itemscope itemtype="http://schema.org/Person">
+    <img class="site-author-image" itemprop="image" alt="MisakaTang"
+      src="/images/misaka.jpg">
+  <p class="site-author-name" itemprop="name">MisakaTang</p>
+  <div class="site-description" itemprop="description">The limits of my language are the limits of my world</div>
+</div>
+<div class="site-state-wrap animated">
+  <nav class="site-state">
+      <div class="site-state-item site-state-posts">
+        <a href="/%E5%BD%92%E6%A1%A3/">
+          <span class="site-state-item-count">110</span>
+          <span class="site-state-item-name">日志</span>
+        </a>
+      </div>
+      <div class="site-state-item site-state-categories">
+          <a href="/categories/">
+        <span class="site-state-item-count">3</span>
+        <span class="site-state-item-name">分类</span></a>
+      </div>
+      <div class="site-state-item site-state-tags">
+          <a href="/tags/">
+        <span class="site-state-item-count">104</span>
+        <span class="site-state-item-name">标签</span></a>
+      </div>
+  </nav>
+</div>
+  <div class="links-of-author animated">
+      <span class="links-of-author-item">
+        <a href="https://github.com/TangMisaka23001" title="GitHub → https:&#x2F;&#x2F;github.com&#x2F;TangMisaka23001" rel="noopener me" target="_blank"><i class="fab fa-github fa-fw"></i>GitHub</a>
+      </span>
+      <span class="links-of-author-item">
+        <a href="mailto:mikasatang@gmail.com" title="E-Mail → mailto:mikasatang@gmail.com" rel="noopener me" target="_blank"><i class="fa fa-envelope fa-fw"></i>E-Mail</a>
+      </span>
+  </div>
+
+        </div>
+      </div>
+    </div>
+
+    
+    <div class="sidebar-inner sidebar-blogroll">
+      <div class="links-of-blogroll animated">
+        <div class="links-of-blogroll-title"><i class="fa fa-globe fa-fw"></i>
+          链接
+        </div>
+        <ul class="links-of-blogroll-list">
+            <li class="links-of-blogroll-item">
+              <a href="http://blog.bbchen.top/" title="http:&#x2F;&#x2F;blog.bbchen.top" rel="noopener" target="_blank">BB chen的漂流记</a>
+            </li>
+            <li class="links-of-blogroll-item">
+              <a href="http://blog.zhuzhenyuan.cn/" title="http:&#x2F;&#x2F;blog.zhuzhenyuan.cn" rel="noopener" target="_blank">Aurthur_的博客</a>
+            </li>
+        </ul>
+      </div>
+    </div>
+  </aside>
+
+
+    </div>
+
+    <div class="main-inner post posts-expand">
+
+
+  
+
+
+<div class="post-block">
+  
+  
+
+  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="http://misakatang.cn/2024/07/17/programming-language-pragmatics-09/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/misaka.jpg">
+      <meta itemprop="name" content="MisakaTang">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="MisakaTang's Blog">
+      <meta itemprop="description" content="The limits of my language are the limits of my world">
+    </span>
+
+    <span hidden itemprop="post" itemscope itemtype="http://schema.org/CreativeWork">
+      <meta itemprop="name" content="《Programming Language Pragmatics》第九章笔记 | MisakaTang's Blog">
+      <meta itemprop="description" content="">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          《Programming Language Pragmatics》第九章笔记
+        </h1>
+
+        <div class="post-meta-container">
+          <div class="post-meta">
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar"></i>
+      </span>
+      <span class="post-meta-item-text">发表于</span>
+
+      <time title="创建时间：2024-07-17 11:45:14" itemprop="dateCreated datePublished" datetime="2024-07-17T11:45:14+00:00">2024-07-17</time>
+    </span>
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar-check"></i>
+      </span>
+      <span class="post-meta-item-text">更新于</span>
+      <time title="修改时间：2025-01-04 03:05:07" itemprop="dateModified" datetime="2025-01-04T03:05:07+00:00">2025-01-04</time>
+    </span>
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-folder"></i>
+      </span>
+      <span class="post-meta-item-text">分类于</span>
+        <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+          <a href="/%E5%88%86%E7%B1%BB/%E6%8A%80%E6%9C%AF/" itemprop="url" rel="index"><span itemprop="name">技术</span></a>
+        </span>
+    </span>
+
+  
+</div>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody"><h2 id="Data-Abstraction-and-Object-Orientation"><a href="#Data-Abstraction-and-Object-Orientation" class="headerlink" title="Data Abstraction and Object Orientation"></a>Data Abstraction and Object Orientation</h2><h3 id="Object-Oriented-Programming"><a href="#Object-Oriented-Programming" class="headerlink" title="Object-Oriented Programming"></a>Object-Oriented Programming</h3><p>he abstraction provided by modules and module types has at least three important benefits:</p>
+<ol>
+<li>It <strong>reduces conceptual load</strong> by minimizing the amount of detail that the programmer must think about at one time.</li>
+<li>It provides fault containment by preventing the programmer from using a program component in inappropriate ways, and by limiting the portion of a program’s text in which a given component can be used, thereby limiting the portion that must be considered when searching for the cause of a bug.</li>
+<li>It <strong>provides a significant degree of independence among program components</strong>, making it easier to assign their construction to separate individuals, to modify their internal implementations without changing external code that uses them, or to install them in a library where they can be used by other programs.</li>
+</ol>
+<p>Object-oriented programming can be seen as an attempt to enhance opportunities for code reuse by making it easy to define new abstractions as <strong>extensions or refinements of existing abstractions</strong>. </p>
+<ul>
+<li>Public and Private Members</li>
+<li>Tiny Subroutines（get set）</li>
+<li>Derived Classes</li>
+<li>General-Purpose Base Classes</li>
+<li>Overloaded Constructors</li>
+<li>Modifying Base Class Methods</li>
+<li>Containers&#x2F;Collections</li>
+</ul>
+<h3 id="Encapsulation-and-Inheritance（封装与继承）"><a href="#Encapsulation-and-Inheritance（封装与继承）" class="headerlink" title="Encapsulation and Inheritance（封装与继承）"></a>Encapsulation and Inheritance（封装与继承）</h3><p>Encapsulation mechanisms enable the programmer to <strong>group</strong> data and the subroutines that operate on them together in one place, and to <strong>hide irrelevant details</strong> from the users of an abstraction. </p>
+<h4 id="Modules"><a href="#Modules" class="headerlink" title="Modules"></a>Modules</h4><p>When the header and body of a module appear in separate files, a change to a module body never requires us to recompile any of the module’s users.</p>
+<h4 id="Classes"><a href="#Classes" class="headerlink" title="Classes"></a>Classes</h4><p>With the introduction of inheritance,object-oriented languages must supplement the scope rules of module-based languages to cover additional issues. </p>
+<p>类之间的可见性讨论</p>
+<h4 id="Nesting-Inner-Classes"><a href="#Nesting-Inner-Classes" class="headerlink" title="Nesting (Inner Classes)"></a>Nesting (Inner Classes)</h4><p>内部类的可见性？</p>
+<h3 id="Initialization-and-Finalization"><a href="#Initialization-and-Finalization" class="headerlink" title="Initialization and Finalization"></a>Initialization and Finalization</h3><p>Several important issues arise:</p>
+<ul>
+<li>Choosing a constructor</li>
+<li>References and values</li>
+<li>Execution order</li>
+<li>Garbage collection</li>
+</ul>
+<h3 id="Dynamic-Method-Binding"><a href="#Dynamic-Method-Binding" class="headerlink" title="Dynamic Method Binding"></a>Dynamic Method Binding</h3><p>动态方法绑定会造成开销，动态和静态每个语言的选择不一样，Java选择可以用final来固定一些方法。</p>
+<p>Unfortunately, as we shall see in Section 9.4.3, dynamic method binding imposes run-time overhead.While this overhead is generally modest,it is nonetheless a concern for small subroutines in performance-critical applications. Smalltalk, Objective-C, Modula-3, Python, and Ruby use dynamic method binding for all methods. Java and Eiffel use dynamic method binding by default, but allow individual methods and (in Java) classes to be labeled final (Java) or frozen (Eiffel), in which case they cannot be overridden by derived classes, and can therefore employ an optimized implementation.</p>
+<ul>
+<li>Virtual and Nonvirtual Methods</li>
+<li>Abstract Classes</li>
+<li>Member Lookup</li>
+<li>Polymorphism</li>
+<li>Object Closures</li>
+</ul>
+<h3 id="Multiple-Inheritance（多重继承）"><a href="#Multiple-Inheritance（多重继承）" class="headerlink" title="Multiple Inheritance（多重继承）"></a>Multiple Inheritance（多重继承）</h3><h3 id="Object-Oriented-Programming-Revisited"><a href="#Object-Oriented-Programming-Revisited" class="headerlink" title="Object-Oriented Programming Revisited"></a>Object-Oriented Programming Revisited</h3><p>we characterized object-oriented programming in terms of three fundamental concepts: encapsulation, inheritance, and dynamic method binding. </p>
+<ul>
+<li>Encapsulation allows the implementation details of an abstraction to be hidden behind a simple interface.</li>
+<li>Inheritance allows a new abstraction to be defined as an extension or refinement of some existing abstraction,obtaining some or all of its characteristics automatically.</li>
+<li>Dynamic method binding allows the new abstraction to display its new behavior even when used in a context that expects the old abstraction.</li>
+</ul>
+<h3 id="Summary-and-Concluding-Remarks"><a href="#Summary-and-Concluding-Remarks" class="headerlink" title="Summary and Concluding Remarks"></a>Summary and Concluding Remarks</h3><p>这是我们关于语言设计的五个核心章节中的最后一个：名称（第3章）、控制流（第6章）、类型（第7章）、子程序（第8章）和对象（第9章）。</p>
+<p>我们在第9.1节开始，通过确定面向对象编程的三个基本概念：封装、继承和动态方法绑定。我们还介绍了类、对象和方法的术语。我们已经在第3章的模块中看到了封装。封装允许复杂数据抽象的细节被隐藏在比较简单的接口后面。继承通过使程序员能够轻松定义新的抽象作为现有抽象的细化或扩展，扩展了封装的实用性。继承为多态子程序提供了一个自然的基础：如果一个子程序期望一个给定类的实例作为参数，那么可以使用从预期类派生的任何类的对象来代替（假设它保留了整个现有接口）。动态方法绑定通过安排对参数方法之一的调用在运行时使用与实际对象的类相关联的实现，而不是与参数的声明类相关联的实现，扩展了这种形式的多态性。我们注意到，包括Modula-3、Oberon、Ada 95和Fortran 2003在内的一些语言，通过一种类型扩展机制支持面向对象，其中封装与模块相关联，但继承和动态方法绑定与一种特殊形式的记录相关联。</p>
+<p>在后续章节中，我们详细讨论了对象的初始化和终结、动态方法绑定以及（在PLP CD上的）多重继承。在许多情况下，我们发现功能性与一方面的简洁性和执行速度之间存在权衡。将变量视为引用而非值，通常会导致更简单的语义，但需要额外的间接性。垃圾收集，如第7.7.3节前所述，极大地简化了软件的创建和维护，但带来了运行时的成本。动态方法绑定通常要求（在一般情况下）通过vtables或其他查找机制来分派方法。多重继承的简单实现即使未使用也会带来开销。</p>
+<p>在多个案例中，我们也看到了时间&#x2F;空间的权衡。如第8.2.4节先前提到的，内联子程序可以显著提高代码性能，这不仅是通过消除子程序调用本身的开销，还允许寄存器分配、公共子表达式分析以及其他“全局”代码改进在调用间应用。同时，内联扩展通常会增加对象代码的大小。练习9.28和9.30探讨了在实现多重继承中的类似权衡。</p>
+<p>尽管Smalltalk缺乏多重继承，但它仍被广泛认为是最纯粹和最灵活的面向对象语言之一。然而，它缺乏编译时类型检查，加上其“基于消息”的计算模型以及对动态方法查找的需求，使得其实现相对较慢。C++，具有对象值变量、默认的静态绑定、最小的动态检查和高质量的编译器，很大程度上负责面向对象编程日益增长的普及性。可靠性、可维护性和代码重用的改进，可能会也可能不会证明Smalltalk的高性能开销是合理的。它们几乎肯定证明了C++的相对适度开销，可能也证明了Eiffel略高的开销。随着软件系统规模的不断增加，互联网上分布式计算的爆炸性增长，以及高度可移植的面向对象语言（Java）、面向对象的脚本语言（Python、Ruby、PHP、JavaScript）和二进制对象标准（.NET [WHA03]、CORBA [Sie96]、JavaBeans [Sun97]）的开发，面向对象编程将在21世纪的计算中显然扮演核心角色。</p>
+
+    </div>
+
+    
+    
+    
+
+    <footer class="post-footer">
+          <div class="post-tags">
+              <a href="/%E6%A0%87%E7%AD%BE/%E7%BC%96%E8%AF%91%E5%99%A8/" rel="tag"># 编译器</a>
+              <a href="/%E6%A0%87%E7%AD%BE/Programming-Language-Pragmatics/" rel="tag"># Programming Language Pragmatics</a>
+          </div>
+
+        
+
+          <div class="post-nav">
+            <div class="post-nav-item">
+                <a href="/2024/07/15/programming-language-pragmatics-08/" rel="prev" title="《Programming Language Pragmatics》第八章笔记">
+                  <i class="fa fa-angle-left"></i> 《Programming Language Pragmatics》第八章笔记
+                </a>
+            </div>
+            <div class="post-nav-item">
+                <a href="/2024/08/07/the-ten-commandments-of-egoless-programming/" rel="next" title="The Ten Commandments of Egoless Programming">
+                  The Ten Commandments of Egoless Programming <i class="fa fa-angle-right"></i>
+                </a>
+            </div>
+          </div>
+    </footer>
+  </article>
+</div>
+
+
+
+
+
+
+</div>
+  </main>
+
+  <footer class="footer">
+    <div class="footer-inner">
+
+  <div class="copyright">
+    &copy; 
+    <span itemprop="copyrightYear">2025</span>
+    <span class="with-love">
+      <i class="user"></i>
+    </span>
+    <span class="author" itemprop="copyrightHolder">MisakaTang</span>
+  </div>
+  <div class="powered-by">由 <a href="https://hexo.io/" rel="noopener" target="_blank">Hexo</a> & <a href="https://theme-next.js.org/pisces/" rel="noopener" target="_blank">NexT.Pisces</a> 强力驱动
+  </div>
+
+    </div>
+  </footer>
+
+  
+  <div class="toggle sidebar-toggle" role="button">
+    <span class="toggle-line"></span>
+    <span class="toggle-line"></span>
+    <span class="toggle-line"></span>
+  </div>
+  <div class="sidebar-dimmer"></div>
+  <div class="back-to-top" role="button" aria-label="返回顶部">
+    <i class="fa fa-arrow-up fa-lg"></i>
+    <span>0%</span>
+  </div>
+  <div class="reading-progress-bar"></div>
+
+  <a href="https://github.com/TangMisaka23001" class="github-corner" title="在 GitHub 上关注我" aria-label="在 GitHub 上关注我" rel="noopener" target="_blank"><svg width="80" height="80" viewBox="0 0 250 250" aria-hidden="true"><path d="M0,0 L115,115 L130,115 L142,142 L250,250 L250,0 Z"></path><path d="M128.3,109.0 C113.8,99.7 119.0,89.6 119.0,89.6 C122.0,82.7 120.5,78.6 120.5,78.6 C119.2,72.0 123.4,76.3 123.4,76.3 C127.3,80.9 125.5,87.3 125.5,87.3 C122.9,97.6 130.6,101.9 134.4,103.2" fill="currentColor" style="transform-origin: 130px 106px;" class="octo-arm"></path><path d="M115.0,115.0 C114.9,115.1 118.7,116.5 119.8,115.4 L133.7,101.6 C136.9,99.2 139.9,98.4 142.2,98.6 C133.8,88.0 127.5,74.4 143.8,58.0 C148.5,53.4 154.0,51.2 159.7,51.0 C160.3,49.4 163.2,43.6 171.4,40.1 C171.4,40.1 176.1,42.5 178.8,56.2 C183.1,58.6 187.2,61.8 190.9,65.4 C194.5,69.0 197.7,73.2 200.1,77.6 C213.8,80.2 216.3,84.9 216.3,84.9 C212.7,93.1 206.9,96.0 205.4,96.6 C205.1,102.4 203.0,107.8 198.3,112.5 C181.9,128.9 168.3,122.5 157.7,114.1 C157.9,116.9 156.7,120.9 152.7,124.9 L141.0,136.5 C139.8,137.7 141.6,141.9 141.8,141.8 Z" fill="currentColor" class="octo-body"></path></svg></a>
+
+<noscript>
+  <div class="noscript-warning">Theme NexT works best with JavaScript enabled</div>
+</noscript>
+
+
+  
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js" integrity="sha256-XL2inqUJaslATFnHdJOi9GfQ60on8Wx1C2H8DYiN1xY=" crossorigin="anonymous"></script>
+<script src="/js/comments.js"></script><script src="/js/utils.js"></script><script src="/js/motion.js"></script><script src="/js/sidebar.js"></script><script src="/js/next-boot.js"></script>
+
+  
+
+
+
+
+  <script src="/js/third-party/pace.js"></script>
+
+
+  
+
+
+
+
+  
+
+  <script class="next-config" data-name="enableMath" type="application/json">false</script><script class="next-config" data-name="mathjax" type="application/json">{"enable":true,"tags":"none","mhchem":false,"js":{"url":"https://cdnjs.cloudflare.com/ajax/libs/mathjax/3.2.2/es5/tex-mml-chtml.js","integrity":"sha256-MASABpB4tYktI2Oitl4t+78w/lyA+D7b/s9GEP0JOGI="}}</script>
+<script src="/js/third-party/math/mathjax.js"></script>
+
+
+
+</body>
+</html>

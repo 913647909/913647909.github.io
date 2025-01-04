@@ -1,0 +1,545 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>MisakaTang&#39;s Blog</title>
+  
+  
+  <link href="http://misakatang.cn/atom.xml" rel="self"/>
+  
+  <link href="http://misakatang.cn/"/>
+  <updated>2025-01-04T03:05:07.629Z</updated>
+  <id>http://misakatang.cn/</id>
+  
+  <author>
+    <name>MisakaTang</name>
+    
+  </author>
+  
+  <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>2024年总结</title>
+    <link href="http://misakatang.cn/2024/12/18/2024-summary/"/>
+    <id>http://misakatang.cn/2024/12/18/2024-summary/</id>
+    <published>2024-12-18T11:45:14.000Z</published>
+    <updated>2025-01-04T03:05:07.629Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h2 id=&quot;开始&quot;&gt;&lt;a href=&quot;#开始&quot; class=&quot;headerlink&quot;</summary>
+        
+      
+    
+    
+    
+    <category term="生活" scheme="http://misakatang.cn/%E5%88%86%E7%B1%BB/%E7%94%9F%E6%B4%BB/"/>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>软件开发中的好习惯汇总</title>
+    <link href="http://misakatang.cn/2024/11/18/good-habits-in-software-development/"/>
+    <id>http://misakatang.cn/2024/11/18/good-habits-in-software-development/</id>
+    <published>2024-11-18T11:45:14.000Z</published>
+    <updated>2025-01-04T03:05:07.629Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h2 id=&quot;10个好习惯&quot;&gt;&lt;a href=&quot;#10个好习惯&quot; class=&quot;headerlink&quot;</summary>
+        
+      
+    
+    
+    
+    <category term="技术" scheme="http://misakatang.cn/%E5%88%86%E7%B1%BB/%E6%8A%80%E6%9C%AF/"/>
+    
+    
+    <category term="设计模式" scheme="http://misakatang.cn/%E6%A0%87%E7%AD%BE/%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F/"/>
+    
+    <category term="重构" scheme="http://misakatang.cn/%E6%A0%87%E7%AD%BE/%E9%87%8D%E6%9E%84/"/>
+    
+    <category term="单元测试" scheme="http://misakatang.cn/%E6%A0%87%E7%AD%BE/%E5%8D%95%E5%85%83%E6%B5%8B%E8%AF%95/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Spring Boot自定义参数处理实体ID</title>
+    <link href="http://misakatang.cn/2024/11/13/spring-boot-custom-arguments/"/>
+    <id>http://misakatang.cn/2024/11/13/spring-boot-custom-arguments/</id>
+    <published>2024-11-13T11:45:14.000Z</published>
+    <updated>2025-01-04T03:05:07.629Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h2 id=&quot;Spring-Boot自定义参数处理实体ID&quot;&gt;&lt;a href=&quot;#Spring-Boot自定义参数处理实体ID&quot; class=&quot;headerlink&quot; title=&quot;Spring Boot自定义参数处理实体ID&quot;&gt;&lt;/a&gt;Spring</summary>
+        
+      
+    
+    
+    
+    <category term="技术" scheme="http://misakatang.cn/%E5%88%86%E7%B1%BB/%E6%8A%80%E6%9C%AF/"/>
+    
+    
+    <category term="Spring Boot" scheme="http://misakatang.cn/%E6%A0%87%E7%AD%BE/Spring-Boot/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Cloudflare白嫖系列</title>
+    <link href="http://misakatang.cn/2024/08/20/free-cloud-flare-workers/"/>
+    <id>http://misakatang.cn/2024/08/20/free-cloud-flare-workers/</id>
+    <published>2024-08-20T11:45:14.000Z</published>
+    <updated>2025-01-04T03:05:07.629Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h2 id=&quot;使用worker解决gpt使用代理锁区问题&quot;&gt;&lt;a href=&quot;#使用worker解决gpt使用代理锁区问题&quot; class=&quot;headerlink&quot;</summary>
+        
+      
+    
+    
+    
+    <category term="技术" scheme="http://misakatang.cn/%E5%88%86%E7%B1%BB/%E6%8A%80%E6%9C%AF/"/>
+    
+    
+    <category term="Cloudflare" scheme="http://misakatang.cn/%E6%A0%87%E7%AD%BE/Cloudflare/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>The Ten Commandments of Egoless Programming</title>
+    <link href="http://misakatang.cn/2024/08/07/the-ten-commandments-of-egoless-programming/"/>
+    <id>http://misakatang.cn/2024/08/07/the-ten-commandments-of-egoless-programming/</id>
+    <published>2024-08-07T11:45:14.000Z</published>
+    <updated>2025-01-04T03:05:07.629Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h2 id=&quot;The-Ten-Commandments-of-Egoless-Programming&quot;&gt;&lt;a href=&quot;#The-Ten-Commandments-of-Egoless-Programming&quot; class=&quot;headerlink&quot; title=&quot;The</summary>
+        
+      
+    
+    
+    
+    <category term="技术" scheme="http://misakatang.cn/%E5%88%86%E7%B1%BB/%E6%8A%80%E6%9C%AF/"/>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>《Programming Language Pragmatics》第九章笔记</title>
+    <link href="http://misakatang.cn/2024/07/17/programming-language-pragmatics-09/"/>
+    <id>http://misakatang.cn/2024/07/17/programming-language-pragmatics-09/</id>
+    <published>2024-07-17T11:45:14.000Z</published>
+    <updated>2025-01-04T03:05:07.629Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h2 id=&quot;Data-Abstraction-and-Object-Orientation&quot;&gt;&lt;a href=&quot;#Data-Abstraction-and-Object-Orientation&quot; class=&quot;headerlink&quot; title=&quot;Data</summary>
+        
+      
+    
+    
+    
+    <category term="技术" scheme="http://misakatang.cn/%E5%88%86%E7%B1%BB/%E6%8A%80%E6%9C%AF/"/>
+    
+    
+    <category term="编译器" scheme="http://misakatang.cn/%E6%A0%87%E7%AD%BE/%E7%BC%96%E8%AF%91%E5%99%A8/"/>
+    
+    <category term="Programming Language Pragmatics" scheme="http://misakatang.cn/%E6%A0%87%E7%AD%BE/Programming-Language-Pragmatics/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>《Programming Language Pragmatics》第八章笔记</title>
+    <link href="http://misakatang.cn/2024/07/15/programming-language-pragmatics-08/"/>
+    <id>http://misakatang.cn/2024/07/15/programming-language-pragmatics-08/</id>
+    <published>2024-07-15T11:45:14.000Z</published>
+    <updated>2025-01-04T03:05:07.629Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h2 id=&quot;Subroutines-and-Control-Abstraction&quot;&gt;&lt;a href=&quot;#Subroutines-and-Control-Abstraction&quot; class=&quot;headerlink&quot; title=&quot;Subroutines and</summary>
+        
+      
+    
+    
+    
+    <category term="技术" scheme="http://misakatang.cn/%E5%88%86%E7%B1%BB/%E6%8A%80%E6%9C%AF/"/>
+    
+    
+    <category term="编译器" scheme="http://misakatang.cn/%E6%A0%87%E7%AD%BE/%E7%BC%96%E8%AF%91%E5%99%A8/"/>
+    
+    <category term="Programming Language Pragmatics" scheme="http://misakatang.cn/%E6%A0%87%E7%AD%BE/Programming-Language-Pragmatics/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>《Programming Language Pragmatics》第七章笔记</title>
+    <link href="http://misakatang.cn/2024/07/10/programming-language-pragmatics-07/"/>
+    <id>http://misakatang.cn/2024/07/10/programming-language-pragmatics-07/</id>
+    <published>2024-07-10T11:45:14.000Z</published>
+    <updated>2025-01-04T03:05:07.629Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h2 id=&quot;DataTypes&quot;&gt;&lt;a href=&quot;#DataTypes&quot; class=&quot;headerlink&quot; title=&quot;DataTypes&quot;&gt;&lt;/a&gt;DataTypes&lt;/h2&gt;&lt;p&gt;Types serve two principal</summary>
+        
+      
+    
+    
+    
+    <category term="技术" scheme="http://misakatang.cn/%E5%88%86%E7%B1%BB/%E6%8A%80%E6%9C%AF/"/>
+    
+    
+    <category term="编译器" scheme="http://misakatang.cn/%E6%A0%87%E7%AD%BE/%E7%BC%96%E8%AF%91%E5%99%A8/"/>
+    
+    <category term="Programming Language Pragmatics" scheme="http://misakatang.cn/%E6%A0%87%E7%AD%BE/Programming-Language-Pragmatics/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>《Programming Language Pragmatics》第六章笔记</title>
+    <link href="http://misakatang.cn/2024/07/09/programming-language-pragmatics-06/"/>
+    <id>http://misakatang.cn/2024/07/09/programming-language-pragmatics-06/</id>
+    <published>2024-07-09T11:45:14.000Z</published>
+    <updated>2025-01-04T03:05:07.629Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h2 id=&quot;Control-Flow&quot;&gt;&lt;a href=&quot;#Control-Flow&quot; class=&quot;headerlink&quot; title=&quot;Control Flow&quot;&gt;&lt;/a&gt;Control Flow&lt;/h2&gt;&lt;p&gt;the language mechanisms used</summary>
+        
+      
+    
+    
+    
+    <category term="技术" scheme="http://misakatang.cn/%E5%88%86%E7%B1%BB/%E6%8A%80%E6%9C%AF/"/>
+    
+    
+    <category term="编译器" scheme="http://misakatang.cn/%E6%A0%87%E7%AD%BE/%E7%BC%96%E8%AF%91%E5%99%A8/"/>
+    
+    <category term="Programming Language Pragmatics" scheme="http://misakatang.cn/%E6%A0%87%E7%AD%BE/Programming-Language-Pragmatics/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>《Programming Language Pragmatics》第四章笔记</title>
+    <link href="http://misakatang.cn/2024/03/14/programming-language-pragmatics-05/"/>
+    <id>http://misakatang.cn/2024/03/14/programming-language-pragmatics-05/</id>
+    <published>2024-03-14T11:45:14.000Z</published>
+    <updated>2025-01-04T03:05:07.629Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h2 id=&quot;Semantic-Analysis&quot;&gt;&lt;a href=&quot;#Semantic-Analysis&quot; class=&quot;headerlink&quot; title=&quot;Semantic Analysis&quot;&gt;&lt;/a&gt;Semantic Analysis&lt;/h2&gt;&lt;p&gt;semantics</summary>
+        
+      
+    
+    
+    
+    <category term="技术" scheme="http://misakatang.cn/%E5%88%86%E7%B1%BB/%E6%8A%80%E6%9C%AF/"/>
+    
+    
+    <category term="编译器" scheme="http://misakatang.cn/%E6%A0%87%E7%AD%BE/%E7%BC%96%E8%AF%91%E5%99%A8/"/>
+    
+    <category term="Programming Language Pragmatics" scheme="http://misakatang.cn/%E6%A0%87%E7%AD%BE/Programming-Language-Pragmatics/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>《Programming Language Pragmatics》第三章笔记</title>
+    <link href="http://misakatang.cn/2024/01/29/programming-language-pragmatics-04/"/>
+    <id>http://misakatang.cn/2024/01/29/programming-language-pragmatics-04/</id>
+    <published>2024-01-29T11:45:14.000Z</published>
+    <updated>2025-01-04T03:05:07.629Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h2 id=&quot;Names-Scopes-and-Bindings&quot;&gt;&lt;a href=&quot;#Names-Scopes-and-Bindings&quot; class=&quot;headerlink&quot; title=&quot;Names, Scopes, and Bindings&quot;&gt;&lt;/a&gt;Names,</summary>
+        
+      
+    
+    
+    
+    <category term="技术" scheme="http://misakatang.cn/%E5%88%86%E7%B1%BB/%E6%8A%80%E6%9C%AF/"/>
+    
+    
+    <category term="编译器" scheme="http://misakatang.cn/%E6%A0%87%E7%AD%BE/%E7%BC%96%E8%AF%91%E5%99%A8/"/>
+    
+    <category term="Programming Language Pragmatics" scheme="http://misakatang.cn/%E6%A0%87%E7%AD%BE/Programming-Language-Pragmatics/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Docusaurus快速搭建个人知识网站</title>
+    <link href="http://misakatang.cn/2024/01/24/docusaurus-quick-start/"/>
+    <id>http://misakatang.cn/2024/01/24/docusaurus-quick-start/</id>
+    <published>2024-01-24T11:45:14.000Z</published>
+    <updated>2025-01-04T03:05:07.629Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;p&gt;因为目前博客的主题在文字排版上总感觉有一些问题，再加上想做一个个人的知识整合网站于是就开始折腾Docusaurus。&lt;/p&gt;
+&lt;h2 id=&quot;创建项目&quot;&gt;&lt;a href=&quot;#创建项目&quot; class=&quot;headerlink&quot;</summary>
+        
+      
+    
+    
+    
+    <category term="技术" scheme="http://misakatang.cn/%E5%88%86%E7%B1%BB/%E6%8A%80%E6%9C%AF/"/>
+    
+    
+    <category term="静态网站" scheme="http://misakatang.cn/%E6%A0%87%E7%AD%BE/%E9%9D%99%E6%80%81%E7%BD%91%E7%AB%99/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>《Crafting Interpreters》笔记</title>
+    <link href="http://misakatang.cn/2024/01/18/crafting-interpreters-notes/"/>
+    <id>http://misakatang.cn/2024/01/18/crafting-interpreters-notes/</id>
+    <published>2024-01-18T11:45:14.000Z</published>
+    <updated>2025-01-04T03:05:07.629Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h2 id=&quot;Scanning&quot;&gt;&lt;a href=&quot;#Scanning&quot; class=&quot;headerlink&quot;</summary>
+        
+      
+    
+    
+    
+    <category term="技术" scheme="http://misakatang.cn/%E5%88%86%E7%B1%BB/%E6%8A%80%E6%9C%AF/"/>
+    
+    
+    <category term="编译器" scheme="http://misakatang.cn/%E6%A0%87%E7%AD%BE/%E7%BC%96%E8%AF%91%E5%99%A8/"/>
+    
+    <category term="Crafting Interpreters" scheme="http://misakatang.cn/%E6%A0%87%E7%AD%BE/Crafting-Interpreters/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>2023年总结</title>
+    <link href="http://misakatang.cn/2023/12/28/2023-summary/"/>
+    <id>http://misakatang.cn/2023/12/28/2023-summary/</id>
+    <published>2023-12-28T11:45:14.000Z</published>
+    <updated>2025-01-04T03:05:07.625Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h2 id=&quot;开始&quot;&gt;&lt;a href=&quot;#开始&quot; class=&quot;headerlink&quot; title=&quot;开始&quot;&gt;&lt;/a&gt;开始&lt;/h2&gt;&lt;p&gt;随着年龄的增长，似乎也到了要写日记的年纪了（正经人谁口口口）。况且今年算是一个特殊的年份，呐，就来回顾一下今年的种种罢。&lt;/p&gt;
+&lt;h2</summary>
+        
+      
+    
+    
+    
+    <category term="生活" scheme="http://misakatang.cn/%E5%88%86%E7%B1%BB/%E7%94%9F%E6%B4%BB/"/>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>阿里云原生应用脚手架攀爬事故小记</title>
+    <link href="http://misakatang.cn/2023/12/15/start-aliyun-maven-problem/"/>
+    <id>http://misakatang.cn/2023/12/15/start-aliyun-maven-problem/</id>
+    <published>2023-12-15T11:45:14.000Z</published>
+    <updated>2025-01-04T03:05:07.629Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h2 id=&quot;起源&quot;&gt;&lt;a href=&quot;#起源&quot; class=&quot;headerlink&quot; title=&quot;起源&quot;&gt;&lt;/a&gt;起源&lt;/h2&gt;&lt;p&gt;这个事故来源于某个PHPer转职Javaer时发生的灵异事件，在&lt;a</summary>
+        
+      
+    
+    
+    
+    <category term="技术" scheme="http://misakatang.cn/%E5%88%86%E7%B1%BB/%E6%8A%80%E6%9C%AF/"/>
+    
+    
+    <category term="maven" scheme="http://misakatang.cn/%E6%A0%87%E7%AD%BE/maven/"/>
+    
+    <category term="Spring" scheme="http://misakatang.cn/%E6%A0%87%E7%AD%BE/Spring/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>又一年双11之使用Traefik+Portainer快速搭建个人网站</title>
+    <link href="http://misakatang.cn/2023/11/17/oxcafebabe-fast-build/"/>
+    <id>http://misakatang.cn/2023/11/17/oxcafebabe-fast-build/</id>
+    <published>2023-11-17T11:45:14.000Z</published>
+    <updated>2025-01-04T03:05:07.629Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h2 id=&quot;前言&quot;&gt;&lt;a href=&quot;#前言&quot; class=&quot;headerlink&quot; title=&quot;前言&quot;&gt;&lt;/a&gt;前言&lt;/h2&gt;&lt;p&gt;又又又到了self-hosted</summary>
+        
+      
+    
+    
+    
+    <category term="技术" scheme="http://misakatang.cn/%E5%88%86%E7%B1%BB/%E6%8A%80%E6%9C%AF/"/>
+    
+    
+    <category term="Docker" scheme="http://misakatang.cn/%E6%A0%87%E7%AD%BE/Docker/"/>
+    
+    <category term="Portainer" scheme="http://misakatang.cn/%E6%A0%87%E7%AD%BE/Portainer/"/>
+    
+    <category term="Traefik" scheme="http://misakatang.cn/%E6%A0%87%E7%AD%BE/Traefik/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>《Programming Language Pragmatics》第二章笔记</title>
+    <link href="http://misakatang.cn/2023/11/16/programming-language-pragmatics-03/"/>
+    <id>http://misakatang.cn/2023/11/16/programming-language-pragmatics-03/</id>
+    <published>2023-11-16T11:45:14.000Z</published>
+    <updated>2025-01-04T03:05:07.629Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h2 id=&quot;Programming-Language-Syntax&quot;&gt;&lt;a href=&quot;#Programming-Language-Syntax&quot; class=&quot;headerlink&quot; title=&quot;Programming Language</summary>
+        
+      
+    
+    
+    
+    <category term="技术" scheme="http://misakatang.cn/%E5%88%86%E7%B1%BB/%E6%8A%80%E6%9C%AF/"/>
+    
+    
+    <category term="编译器" scheme="http://misakatang.cn/%E6%A0%87%E7%AD%BE/%E7%BC%96%E8%AF%91%E5%99%A8/"/>
+    
+    <category term="Programming Language Pragmatics" scheme="http://misakatang.cn/%E6%A0%87%E7%AD%BE/Programming-Language-Pragmatics/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>《Programming Language Pragmatics》摘录翻译-其二</title>
+    <link href="http://misakatang.cn/2023/11/15/programming-language-pragmatics-02/"/>
+    <id>http://misakatang.cn/2023/11/15/programming-language-pragmatics-02/</id>
+    <published>2023-11-15T23:45:14.000Z</published>
+    <updated>2025-01-04T03:05:07.629Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h2 id=&quot;An-Overview-of-Compilation&quot;&gt;&lt;a href=&quot;#An-Overview-of-Compilation&quot; class=&quot;headerlink&quot; title=&quot;An Overview of Compilation&quot;&gt;&lt;/a&gt;An</summary>
+        
+      
+    
+    
+    
+    <category term="技术" scheme="http://misakatang.cn/%E5%88%86%E7%B1%BB/%E6%8A%80%E6%9C%AF/"/>
+    
+    
+    <category term="编译器" scheme="http://misakatang.cn/%E6%A0%87%E7%AD%BE/%E7%BC%96%E8%AF%91%E5%99%A8/"/>
+    
+    <category term="Programming Language Pragmatics" scheme="http://misakatang.cn/%E6%A0%87%E7%AD%BE/Programming-Language-Pragmatics/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>《Programming Language Pragmatics》摘录翻译-其一</title>
+    <link href="http://misakatang.cn/2023/11/15/programming-language-pragmatics-01/"/>
+    <id>http://misakatang.cn/2023/11/15/programming-language-pragmatics-01/</id>
+    <published>2023-11-15T11:45:14.000Z</published>
+    <updated>2025-01-04T03:05:07.629Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h2 id=&quot;The-Art-of-Language-Design&quot;&gt;&lt;a href=&quot;#The-Art-of-Language-Design&quot; class=&quot;headerlink&quot; title=&quot;The Art of Language Design&quot;&gt;&lt;/a&gt;The Art</summary>
+        
+      
+    
+    
+    
+    <category term="技术" scheme="http://misakatang.cn/%E5%88%86%E7%B1%BB/%E6%8A%80%E6%9C%AF/"/>
+    
+    
+    <category term="编译器" scheme="http://misakatang.cn/%E6%A0%87%E7%AD%BE/%E7%BC%96%E8%AF%91%E5%99%A8/"/>
+    
+    <category term="Programming Language Pragmatics" scheme="http://misakatang.cn/%E6%A0%87%E7%AD%BE/Programming-Language-Pragmatics/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>《A Philosophy of Software Design》笔记</title>
+    <link href="http://misakatang.cn/2023/11/10/a-philosophy-of-software-design/"/>
+    <id>http://misakatang.cn/2023/11/10/a-philosophy-of-software-design/</id>
+    <published>2023-11-10T11:45:14.000Z</published>
+    <updated>2025-01-04T03:05:07.625Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h2 id=&quot;前言&quot;&gt;&lt;a href=&quot;#前言&quot; class=&quot;headerlink&quot;</summary>
+        
+      
+    
+    
+    
+    <category term="技术" scheme="http://misakatang.cn/%E5%88%86%E7%B1%BB/%E6%8A%80%E6%9C%AF/"/>
+    
+    
+    <category term="笔记" scheme="http://misakatang.cn/%E6%A0%87%E7%AD%BE/%E7%AC%94%E8%AE%B0/"/>
+    
+  </entry>
+  
+</feed>
